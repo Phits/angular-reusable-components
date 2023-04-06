@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-alert-box',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./alert-box.component.scss']
 })
 export class AlertBoxComponent {
-
+  @Input() alertTitle = '';
+  @Input() alertMessage = '';
+  @Input() alertClass = '';
 }

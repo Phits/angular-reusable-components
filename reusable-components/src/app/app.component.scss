@@ -1,0 +1,9 @@
+@use '../scss/variables' as *;
+
+.app {
+
+  &__alert {
+    display: block;
+    margin: $global-spacing $global-spacing;
+  }
+}

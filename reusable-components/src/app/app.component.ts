@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'reusable-components';
+  title = 'Reusable Components';
+  // alertTitle = 'Success';
+  // alertMessage = 'A simple success alert—check it out!';
+  // alertClass = 'alert-success';
 }
