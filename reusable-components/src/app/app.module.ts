@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReusableModule } from '../_reusable/reusable.module';
+import { ReusableModule } from './_reusable/reusable.module';
     ''
 
 @NgModule({
