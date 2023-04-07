@@ -1,4 +1,11 @@
 <app-alert-box [alertTitle]="'Success'" [alertMessage]="'A simple success alert—check it out!'" [alertClass]="'alert-success'" class="app__alert"></app-alert-box>
 
+<div *ngFor="let user of usersList">
+    <app-card [name]="user.name" [username]="user.username" [email]="user.email" class="app__card"></app-card>
+</div>
+
+
 <app-alert-box [alertTitle]="'Danger'" [alertMessage]="'A simple danger alert—check it out!'"
                [alertClass]="'alert-danger'" class="app__alert"></app-alert-box>
+
+

@@ -2,7 +2,7 @@
 
 .app {
 
-  &__alert {
+  &__alert, &__card {
     display: block;
     margin: $global-spacing $global-spacing;
   }
