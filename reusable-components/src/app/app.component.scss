@@ -4,6 +4,7 @@
 
   &__alert, &__card {
     display: block;
+    float: left;
     margin: $global-spacing $global-spacing;
   }
 }

@@ -11,4 +11,5 @@ export class CardComponent {
   @Input() name = '';
   @Input() username = '';
   @Input() email = '';
+  @Input() cardWidth = '';
 }

@@ -10,6 +10,8 @@ import data from './userList.json';
 export class AppComponent implements OnInit{
   title = 'Reusable Components';
   usersList: UserList[] = [];
+  cardWidth = '240px';
+  floatLeft = true;
 
   constructor() {}
 
