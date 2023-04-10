@@ -1,0 +1,41 @@
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>#</th>
+                <ng-container *ngFor="let head of HeadArray">
+                    <th>{{ head.Head }}</th>
+                </ng-container>
+            </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let user of UsersList; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.username }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.phone }}</td>
+                    <td *ngIf="isAction">
+                        <button (click)="editClicked(i+1)" class="btn btn-primary btn-sm">Edit</button>
+                        <button class="btn btn-primary btn-sm ml-1">delete</button>
+                    </td>
+                </tr>
+
+<!--            <tr *ngFor="let item of GridArray;let sr=index">-->
+<!--                <td>{{sr+1}}</td>-->
+<!--                <td  *ngFor="let head of HeadArray">-->
+<!--                    <div *ngIf="head.FieldName != ''">-->
+<!--                        {{item[head.FieldName]}}-->
+<!--                    </div>-->
+<!--                    <div *ngIf="head.FieldName == ''" class="text-center">-->
+<!--                        <button class="btn btn-sm btn-primary" (click)="edit(item)">Edit</button>-->
+<!--                        <button class="btn btn-sm btn-primary" (click)="delete(item)" style="margin-left: 10px;">Delete</button>-->
+<!--                    </div>-->
+<!--                </td>-->
+<!--            </tr>-->
+            </tbody>
+        </table>
+    </div>
+</div>

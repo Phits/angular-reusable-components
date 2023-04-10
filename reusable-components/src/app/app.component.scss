@@ -2,7 +2,21 @@
 
 .app {
 
-  &__alert, &__card {
+  &__alert, &__jumbo, &__table {
+    clear: both;
+    display: block;
+    margin: $global-spacing $global-spacing;
+  }
+
+  &__button {
+    clear: both;
+    display: block;
+    margin: auto;
+    width: 120px;
+  }
+
+
+  &__card {
     display: block;
     float: left;
     margin: $global-spacing $global-spacing;

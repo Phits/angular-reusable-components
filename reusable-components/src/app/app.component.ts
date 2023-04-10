@@ -9,15 +9,36 @@ import data from './userList.json';
 })
 export class AppComponent implements OnInit{
   title = 'Reusable Components';
-  usersList: UserList[] = [];
+  UsersList: UserList[] = [];
   cardWidth = '240px';
-  floatLeft = true;
+
+  jumboTitle = 'Jumbo Example';
+  jumboDescription = 'Lorem ipsum...';
+
+  btnClass = 'btn-primary';
+  btnText = "Show Alert";
+
+  HeadArray = [
+      {'Head': 'Name', 'FieldName': 'name'},
+      {'Head': 'UserName', 'FieldName': 'username'},
+      {'Head': 'Email', 'FieldName': 'email'},
+      {'Head': 'Phone', 'FieldName': 'phone'},
+      {'Head': 'Action', 'FieldName': ''},
+  ]
+    isActive = true;
 
   constructor() {}
 
   ngOnInit() {
-   this.usersList = data;
+   this.UsersList = data;
   }
 
+  onBtnClick(e: Event) {
+    console.log('Clicked ', e);
+  }
+
+  onEdit(i: number) {
+      console.log(i);
+  }
 
 }

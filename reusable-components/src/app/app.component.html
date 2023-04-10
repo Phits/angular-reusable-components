@@ -1,6 +1,16 @@
+<app-jumbotron [headline]="jumboTitle" [description]="jumboDescription" class="app__jumbo"></app-jumbotron>
+
 <app-alert-box [alertTitle]="'Success'" [alertMessage]="'A simple success alert—check it out!'" [alertClass]="'alert-success'" class="app__alert"></app-alert-box>
 
-<div *ngFor="let user of usersList">
+<div class="app__button">
+    <app-global-button (onBtnClick)="onBtnClick($event)" [btnClass]="btnClass" [text]="btnText"></app-global-button>
+</div>
+
+<app-global-table (onEdit)="onEdit($event)" [HeadArray]="HeadArray" [UsersList]="UsersList" [isAction]="isActive"
+                  class="app__table"
+></app-global-table>
+
+<div *ngFor="let user of UsersList">
     <app-card [name]="user.name" [username]="user.username" [email]="user.email" [cardWidth]="cardWidth" class="app__card"></app-card>
 </div>
 
