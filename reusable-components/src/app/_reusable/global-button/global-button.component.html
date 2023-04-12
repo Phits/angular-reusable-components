@@ -1,1 +1,1 @@
-<button class="btn button" (click)="onClick(); $event.stopPropagation()" [ngClass]="btnClass">{{ text }}</button>
+<button (click)="onClick($event)" class="btn"  [ngClass]="[size, darkMode]">{{ text }}</button>

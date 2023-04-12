@@ -6,12 +6,14 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./global-button.component.scss']
 })
 export class GlobalButtonComponent {
-  @Input() btnClass = '';
-  @Input() text = '';
+  @Input() text?: string;
+  @Input() size?: string;
+  @Input() backgroundColor?: string;
+  @Input() darkMode?: string;
 
-  @Output() onBtnClick = new EventEmitter<any>;
+  @Output() onBtnClick = new EventEmitter<Event>;
 
-  onClick() {
-    this.onBtnClick.emit('Hi');
+  onClick(e: Event) {
+    this.onBtnClick.emit(e);
   }
 }

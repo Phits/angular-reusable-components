@@ -15,8 +15,10 @@ export class AppComponent implements OnInit{
   jumboTitle = 'Jumbo Example';
   jumboDescription = 'Lorem ipsum...';
 
-  btnClass = 'btn-primary';
-  btnText = "Show Alert";
+    buttonText = 'Toggle Alert'
+    buttonSize = 'medium';
+    buttonStyle = 'btn-primary';
+    showAlert = false;
 
   HeadArray = [
       {'Head': 'Name', 'FieldName': 'name'},
@@ -34,7 +36,7 @@ export class AppComponent implements OnInit{
   }
 
   onBtnClick(e: Event) {
-    console.log('Clicked ', e);
+    this.showAlert = !this.showAlert;
   }
 
   onEdit(i: number) {

@@ -1,3 +1,29 @@
-.button {
-  text-align: center;
+.small {
+  font-size: 10px;
+  height: 26px;
+  width: 75px;
+}
+
+.medium {
+  height: 36px;
+  width: 200px;
+}
+
+.large {
+  height: 48px;
+  width: 300px;
+}
+
+.darkMode {
+  background-color: black;
+  color: white;
+}
+
+.lightMode {
+  background-color: lightgrey;
+  color: black;
+}
+
+button {
+  border: none;
 }
