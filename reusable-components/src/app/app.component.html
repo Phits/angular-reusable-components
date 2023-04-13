@@ -8,7 +8,8 @@
                        [darkMode]="buttonStyle"></app-global-button>
 </div>
 
-<app-global-table (onEdit)="onEdit($event)" [HeadArray]="HeadArray" [UsersList]="UsersList" [isAction]="isActive"
+<app-global-table (onEdit)="onEdit($event)" (onDelete)="onDelete($event)" [HeadArray]="HeadArray" [UsersList]="UsersList"
+                  [isAction]="isActive"
                   class="app__table"
 ></app-global-table>
 

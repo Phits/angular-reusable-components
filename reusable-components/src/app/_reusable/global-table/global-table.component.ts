@@ -10,10 +10,15 @@ export class GlobalTableComponent {
   @Input() HeadArray: any; // To Do: create interface
   @Input() UsersList: UserList[] = [];
   @Input() isAction?: boolean;
-  @Output() onEdit = new EventEmitter<number>;
 
+  @Output() onEdit= new EventEmitter<number>;
+  @Output() onDelete= new EventEmitter<number>;
 
   editClicked(i: number) {
     this.onEdit.emit(i);
+  }
+
+  deleteClicked(i: number) {
+    this.onDelete.emit(i);
   }
 }

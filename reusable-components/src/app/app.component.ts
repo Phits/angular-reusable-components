@@ -43,4 +43,8 @@ export class AppComponent implements OnInit{
       console.log(i);
   }
 
+  onDelete(i: number) {
+      console.log(i);
+  }
+
 }

@@ -18,8 +18,8 @@
                     <td>{{ user.email }}</td>
                     <td>{{ user.phone }}</td>
                     <td *ngIf="isAction">
-                        <button (click)="editClicked(i+1)" class="btn btn-primary btn-sm">Edit</button>
-                        <button class="btn btn-primary btn-sm ml-1">delete</button>
+                        <button (click)="editClicked(i )" class="btn btn-primary btn-sm">Edit</button>
+                        <button (click)="deleteClicked(i)" class="btn btn-primary btn-sm m-lg-2">delete</button>
                     </td>
                 </tr>
 
