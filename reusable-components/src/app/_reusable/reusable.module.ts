@@ -5,6 +5,7 @@ import { CardComponent } from './card/card.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { GlobalButtonComponent } from './global-button/global-button.component';
 import { GlobalTableComponent } from './global-table/global-table.component';
+import { GlobalTabsComponent } from './global-tabs/global-tabs.component';
 
 
 
@@ -14,7 +15,8 @@ import { GlobalTableComponent } from './global-table/global-table.component';
     CardComponent,
     JumbotronComponent,
     GlobalButtonComponent,
-    GlobalTableComponent
+    GlobalTableComponent,
+    GlobalTabsComponent
   ],
   imports: [
     CommonModule
@@ -25,6 +27,7 @@ import { GlobalTableComponent } from './global-table/global-table.component';
     JumbotronComponent,
     GlobalButtonComponent,
     GlobalTableComponent,
+    GlobalTabsComponent,
   ]
 })
 export class ReusableModule { }

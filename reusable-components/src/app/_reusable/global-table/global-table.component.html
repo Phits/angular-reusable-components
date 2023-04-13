@@ -10,7 +10,6 @@
             </tr>
             </thead>
             <tbody>
-
                 <tr *ngFor="let user of UsersList; let i = index">
                     <td>{{ i + 1 }}</td>
                     <td>{{ user.name }}</td>
@@ -22,19 +21,6 @@
                         <button (click)="deleteClicked(i)" class="btn btn-primary btn-sm m-lg-2">delete</button>
                     </td>
                 </tr>
-
-<!--            <tr *ngFor="let item of GridArray;let sr=index">-->
-<!--                <td>{{sr+1}}</td>-->
-<!--                <td  *ngFor="let head of HeadArray">-->
-<!--                    <div *ngIf="head.FieldName != ''">-->
-<!--                        {{item[head.FieldName]}}-->
-<!--                    </div>-->
-<!--                    <div *ngIf="head.FieldName == ''" class="text-center">-->
-<!--                        <button class="btn btn-sm btn-primary" (click)="edit(item)">Edit</button>-->
-<!--                        <button class="btn btn-sm btn-primary" (click)="delete(item)" style="margin-left: 10px;">Delete</button>-->
-<!--                    </div>-->
-<!--                </td>-->
-<!--            </tr>-->
             </tbody>
         </table>
     </div>
