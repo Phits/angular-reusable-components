@@ -3,10 +3,37 @@
 <app-alert-box *ngIf="showAlert" [alertTitle]="'Success'" [alertMessage]="'A simple success alert—check it out!'"
                 [alertClass]="'alert-success'" class="app__alert"></app-alert-box>
 
+<div class="row">
+    <div class="col">
+        <app-global-tabs (currentTab)="currentTab($event)" [tabArray]="tabs" class="app__tabs"></app-global-tabs>
+    </div>
+</div>
+<div class="row app__tabs">
+    <div class="col">
+        <div *ngIf="activeTab === 0">
+            <p>This is a registered Panel 1</p>
+        </div>
+        <div *ngIf="activeTab === 1">
+            <p>This is a registered Panel 2</p>
+        </div>
+        <div *ngIf="activeTab === 2">
+            <p>This is a registered Panel 3</p>
+        </div>
+        <div *ngIf="activeTab === 3">
+            <p>This is a registered Panel 4</p>
+        </div>
+    </div>
+</div>
+
 <div class="app__button">
     <app-global-button (onBtnClick)="onBtnClick($event)" [text]="buttonText" [size]="buttonSize"
                        [darkMode]="buttonStyle"></app-global-button>
 </div>
+
+
+<ul *ngFor="let user of UsersList">
+    <app-user-details [item]="user" class="app__user"></app-user-details>
+</ul>
 
 <app-global-table (onEdit)="onEdit($event)" (onDelete)="onDelete($event)" [HeadArray]="HeadArray" [UsersList]="UsersList"
                   [isAction]="isActive"

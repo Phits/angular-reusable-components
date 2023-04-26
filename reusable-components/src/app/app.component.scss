@@ -2,7 +2,7 @@
 
 .app {
 
-  &__alert, &__jumbo, &__table {
+  &__alert, &__jumbo, &__table, &__tabs, &__user {
     clear: both;
     display: block;
     margin: $global-spacing $global-spacing;

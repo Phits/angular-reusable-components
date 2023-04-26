@@ -12,8 +12,8 @@ export class AppComponent implements OnInit{
   UsersList: UserList[] = [];
   cardWidth = '240px';
 
-  jumboTitle = 'Jumbo Example';
-  jumboDescription = 'Lorem ipsum...';
+  jumboTitle = 'Reusable Components';
+  jumboDescription = 'Angular 15.2.5';
 
     buttonText = 'Toggle Alert'
     buttonSize = 'medium';
@@ -28,6 +28,9 @@ export class AppComponent implements OnInit{
       {'Head': 'Action', 'FieldName': ''},
   ]
     isActive = true;
+
+  tabs: string [] = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4'];
+  activeTab? = 0;
 
   constructor() {}
 
@@ -46,5 +49,9 @@ export class AppComponent implements OnInit{
   onDelete(i: number) {
       console.log(i);
   }
+
+    currentTab(i: number) {
+      this.activeTab = i;
+    }
 
 }

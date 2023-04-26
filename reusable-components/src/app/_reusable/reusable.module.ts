@@ -6,6 +6,7 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { GlobalButtonComponent } from './global-button/global-button.component';
 import { GlobalTableComponent } from './global-table/global-table.component';
 import { GlobalTabsComponent } from './global-tabs/global-tabs.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 
 
@@ -16,18 +17,20 @@ import { GlobalTabsComponent } from './global-tabs/global-tabs.component';
     JumbotronComponent,
     GlobalButtonComponent,
     GlobalTableComponent,
-    GlobalTabsComponent
+    GlobalTabsComponent,
+    UserDetailsComponent
   ],
   imports: [
     CommonModule
   ],
-  exports: [
-    AlertBoxComponent,
-    CardComponent,
-    JumbotronComponent,
-    GlobalButtonComponent,
-    GlobalTableComponent,
-    GlobalTabsComponent,
-  ]
+    exports: [
+        AlertBoxComponent,
+        CardComponent,
+        JumbotronComponent,
+        GlobalButtonComponent,
+        GlobalTableComponent,
+        GlobalTabsComponent,
+        UserDetailsComponent,
+    ]
 })
 export class ReusableModule { }
